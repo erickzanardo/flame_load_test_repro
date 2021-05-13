@@ -8,6 +8,7 @@ void main() {
     final myGame = MyGame();
     myGame.onResize(Vector2.all(500));
     await myGame.onLoad();
+    myGame.update(0);
 
     expect(myGame.components.length, 1);
   });

@@ -12,7 +12,10 @@ class MyGameWidget extends StatelessWidget {
 class MyGame extends BaseGame {
   @override
   Future<void> onLoad() async {
+    print('gonna load');
     final citySprite = await loadSprite('sprites/city.png');
-    add(SpriteComponent(sprite: citySprite, size: Vector2(200, 200)));
+    print('loaded');
+    await add(SpriteComponent(sprite: citySprite, size: Vector2(200, 200)));
+    print('added sprite');
   }
 }

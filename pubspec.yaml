@@ -12,7 +12,8 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  flame: 1.0.0-rc10
+  flame:
+    path: ../flame/packages/flame
 
 dev_dependencies:
   flutter_test:

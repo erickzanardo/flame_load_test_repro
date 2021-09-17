@@ -4,12 +4,12 @@ import 'package:flutter/material.dart';
 
 class MyGameWidget extends StatelessWidget {
   @override
-    Widget build(BuildContext context) {
-      return GameWidget(game: MyGame());
-    }
+  Widget build(BuildContext context) {
+    return GameWidget(game: MyGame());
+  }
 }
 
-class MyGame extends BaseGame {
+class MyGame extends FlameGame {
   @override
   Future<void> onLoad() async {
     print('gonna load');
